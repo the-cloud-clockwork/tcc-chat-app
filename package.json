@@ -44,7 +44,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/the-cloud-clockwork/tccw-chat-app.git"
+    "url": "https://github.com/the-cloud-clockwork/tcc-chat-app.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
