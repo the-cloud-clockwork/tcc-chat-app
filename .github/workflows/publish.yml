@@ -20,9 +20,9 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
       - run: npm ci
       - run: npm run build
-      - name: Bump patch version on workflow_dispatch
+      - name: Use unique prerelease version on workflow_dispatch
         if: github.event_name == 'workflow_dispatch'
-        run: npm version patch --no-git-tag-version
+        run: npm version prerelease --preid=ci.${{ github.run_number }} --no-git-tag-version
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
