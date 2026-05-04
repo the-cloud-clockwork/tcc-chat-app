@@ -1,5 +1,5 @@
 {
-  "name": "@tccw/chat-app",
+  "name": "@the-cloud-clockwork/chat-app",
   "version": "1.0.0",
   "type": "module",
   "main": "dist/chat-app.cjs",
